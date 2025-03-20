@@ -1,17 +1,26 @@
-
+/**
+ * <h1>Checking Account</h1>
+ * Checking Account class which is a subclass of BankAccount
+ * 
+ * @author Nick Galus
+ * @version 1.0
+ * @since 2025-03-20
+ */
 public class CheckingAccount extends BankAccount {
-	double overdraftLimit;
+	double overdraftLimit; //sets an overdraft limit
 
+	//constructors below
 	public CheckingAccount() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
 	public CheckingAccount(String accountNumber, double balance, double overdraftLimit) {
-		super(accountNumber, balance);
+		super(accountNumber, balance); //uses super class
 		this.overdraftLimit = overdraftLimit;
 	}
 
+	//overrides the super class withdraw method to prevent overdraft
 	@Override
 	public void withdraw(double amount) {
 		// TODO Auto-generated method stub

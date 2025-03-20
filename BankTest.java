@@ -8,6 +8,14 @@
  */
 public class BankTest {
 
+	/**
+	 * 
+	    * This is the main method which creates the checking and savings objects,
+	    * modifys them
+	    * 
+	    * @param args Unused.
+	    * @return Nothing.
+	 */
 	public static void main(String[] args) {
 		SavingsAccount savings = new SavingsAccount("Savings Account: 1234", 1000, .05);
 		CheckingAccount checking = new CheckingAccount("Checking Account: 4321", 500, 100);
